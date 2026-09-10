@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coco and Eliot's Adventure</title>
+
+    <!-- These meta tags give information about my website -->
+    <meta name="description" content="An information page about Coco and Eliot and their adventure.">
+    <meta name="author" content="Coco Aroch">
+    <meta name="keywords" content="Coco, Eliot, story, adventure, characters">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <header>
+        <h1>Coco and Eliot's Adventure</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About the Story</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#adventure">The Adventure</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>About the Story</h2>
+
+            <p>
+                Coco and Eliot are two best friends who are always getting
+                themselves into unexpected situations. What starts as a normal
+                day quickly turns into an adventure when they realize something
+                important has gone missing.
+            </p>
+
+            <p>
+                The two friends have very different personalities, but
+                <strong>they work best as a team.</strong>
+            </p>
+        </section>
+
+
+        <section id="characters">
+            <h2>Meet the Characters</h2>
+
+            <h3>Coco</h3>
+
+            <img src="images/coco.jpg" alt="Cartoon drawing of Coco" width="300">
+
+            <p>
+                Coco has bleach blonde hair and huge glasses that take up almost
+                half of her face. She is curious, dramatic, and usually the first
+                person to suggest doing something slightly chaotic.
+            </p>
+
+            <h3>Eliot</h3>
+
+            <img src="images/eliot.jpg" alt="Cartoon drawing of Eliot" width="300">
+
+            <p>
+                Eliot has dirty blonde hair, thick eyebrows, long eyelashes, and
+                a soft button nose. She is usually more observant than Coco and
+                tries to think things through before making a decision.
+            </p>
+
+            <p>
+                Even though they are different, they are <em>best friends.</em>
+            </p>
+        </section>
+
+
+        <section id="adventure">
+            <h2>The Adventure</h2>
+
+            <p>
+                Coco and Eliot have to follow clues around town to figure out
+                what happened and find what they are looking for.
+            </p>
+
+            <h3>What They Need</h3>
+
+            <ul>
+                <li>Coco's giant glasses</li>
+                <li>Eliot's detective skills</li>
+                <li>A phone</li>
+                <li>Snacks</li>
+            </ul>
+
+            <h3>Their Plan</h3>
+
+            <ol>
+                <li>Go back to the last place they remember having the missing item.</li>
+                <li>Look for clues.</li>
+                <li>Ask people if they saw anything.</li>
+                <li>Follow the clues.</li>
+                <li>Find the missing item.</li>
+            </ol>
+
+            <p>
+                Their main rule is to <mark>never split up.</mark>
+            </p>
+        </section>
+
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+
+            <img src="images/coco-and-eliot.jpg"
+                 alt="Cartoon drawing of Coco and Eliot together"
+                 width="400">
+
+            <p>
+                These images show Coco and Eliot individually and together.
+            </p>
+        </section>
+
+
+        <section id="links">
+            <h2>More Information</h2>
+
+            <p>
+                Learn more about creating websites at
+                <a href="https://www.w3schools.com/html/">W3Schools HTML</a>.
+            </p>
+
+            <p>
+                You can also check your HTML using the
+                <a href="https://validator.w3.org/">W3C Markup Validation Service</a>.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Created by Coco Aroch for Front End Fundamentals.</p>
+    </footer>
+
+</body>
+
+</html>
