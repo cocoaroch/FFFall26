@@ -1,146 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Coco and Eliot</title>
 
-<head>
-    <title>Coco and Eliot's Adventure</title>
+        <!-- these meta tags give information about my website -->
+        <meta name="description" content="An information site about Coco and Eliot">
+        <meta name="author" content="Coco Aroch">
+        <meta name="keywords" content="Coco, Eliot, story, adventure">
+        <meta charset="UTF-8">
+    </head>
 
-    <!-- These meta tags give information about my website -->
-    <meta name="description" content="An information page about Coco and Eliot and their adventure.">
-    <meta name="author" content="Coco Aroch">
-    <meta name="keywords" content="Coco, Eliot, story, adventure, characters">
-    <meta charset="UTF-8">
-</head>
+    <body>
 
-<body>
+        <header>
+            <h1>Coco and Eliot</h1>
 
-    <header>
-        <h1>Coco and Eliot's Adventure</h1>
+            <nav>
+                <ul>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#adventure">Adventure</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About the Story</a></li>
-                <li><a href="#characters">Characters</a></li>
-                <li><a href="#adventure">The Adventure</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
+        <main>
 
-    <main>
+            <section id="story">
+                <h2>The Story</h2>
 
-        <section id="about">
-            <h2>About the Story</h2>
+                <p>
+                    Coco and Eliot are best friends who are always together.
+                    One day, something important goes missing and they decide
+                    they are going to find it.
+                </p>
 
-            <p>
-                Coco and Eliot are two best friends who are always getting
-                themselves into unexpected situations. What starts as a normal
-                day quickly turns into an adventure when they realize something
-                important has gone missing.
-            </p>
+                <p>
+                    They have completely different personalities, but
+                    <strong>they make a great team.</strong>
+                </p>
+            </section>
 
-            <p>
-                The two friends have very different personalities, but
-                <strong>they work best as a team.</strong>
-            </p>
-        </section>
+            <section id="characters">
+                <h2>The Characters</h2>
 
+                <h3>Coco</h3>
 
-        <section id="characters">
-            <h2>Meet the Characters</h2>
+                <img src="images/coco.jpg" width="300" alt="Cartoon of Coco">
 
-            <h3>Coco</h3>
+                <p>
+                    Coco has bleach blonde hair and huge glasses that take up
+                    almost half of her face. She is curious, dramatic, and
+                    always ready to do something fun.
+                </p>
 
-            <img src="images/coco.jpg" alt="Cartoon drawing of Coco" width="300">
+                <h3>Eliot</h3>
 
-            <p>
-                Coco has bleach blonde hair and huge glasses that take up almost
-                half of her face. She is curious, dramatic, and usually the first
-                person to suggest doing something slightly chaotic.
-            </p>
+                <img src="images/eliot.jpg" width="300" alt="Cartoon of Eliot">
 
-            <h3>Eliot</h3>
+                <p>
+                    Eliot has dirty blonde hair, thick eyebrows, long eyelashes,
+                    and a soft button nose. She is more careful than Coco and
+                    usually thinks before making a decision.
+                </p>
 
-            <img src="images/eliot.jpg" alt="Cartoon drawing of Eliot" width="300">
+                <p>
+                    Coco and Eliot are <em>best friends.</em>
+                </p>
+            </section>
 
-            <p>
-                Eliot has dirty blonde hair, thick eyebrows, long eyelashes, and
-                a soft button nose. She is usually more observant than Coco and
-                tries to think things through before making a decision.
-            </p>
+            <section id="adventure">
+                <h2>The Adventure</h2>
 
-            <p>
-                Even though they are different, they are <em>best friends.</em>
-            </p>
-        </section>
+                <p>
+                    Coco and Eliot decide to retrace their steps and look for
+                    clues that will help them find what went missing.
+                </p>
 
+                <h3>What They Bring</h3>
 
-        <section id="adventure">
-            <h2>The Adventure</h2>
+                <ul>
+                    <li>Coco's glasses</li>
+                    <li>Eliot's notebook</li>
+                    <li>Their phones</li>
+                    <li>Snacks</li>
+                </ul>
 
-            <p>
-                Coco and Eliot have to follow clues around town to figure out
-                what happened and find what they are looking for.
-            </p>
+                <h3>The Plan</h3>
 
-            <h3>What They Need</h3>
+                <ol>
+                    <li>Go back to where they started.</li>
+                    <li>Look for clues.</li>
+                    <li>Ask people for help.</li>
+                    <li>Follow the clues.</li>
+                    <li>Find the missing item.</li>
+                </ol>
 
-            <ul>
-                <li>Coco's giant glasses</li>
-                <li>Eliot's detective skills</li>
-                <li>A phone</li>
-                <li>Snacks</li>
-            </ul>
+                <p>
+                    Their number one rule is to <mark>stick together.</mark>
+                </p>
+            </section>
 
-            <h3>Their Plan</h3>
+            <section id="gallery">
+                <h2>Gallery</h2>
 
-            <ol>
-                <li>Go back to the last place they remember having the missing item.</li>
-                <li>Look for clues.</li>
-                <li>Ask people if they saw anything.</li>
-                <li>Follow the clues.</li>
-                <li>Find the missing item.</li>
-            </ol>
+                <img src="images/coco-and-eliot.jpg" width="400" alt="Coco and Eliot together">
 
-            <p>
-                Their main rule is to <mark>never split up.</mark>
-            </p>
-        </section>
+                <p>
+                    Coco and Eliot are very different, but their differences
+                    are what make their adventures fun.
+                </p>
+            </section>
 
+            <section>
+                <h2>Links</h2>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
+                <p>
+                    Visit
+                    <a href="https://www.w3schools.com/html/">W3Schools</a>
+                    to learn more about HTML.
+                </p>
 
-            <img src="images/coco-and-eliot.jpg"
-                 alt="Cartoon drawing of Coco and Eliot together"
-                 width="400">
+                <p>
+                    Visit the
+                    <a href="https://validator.w3.org/">W3C Validator</a>
+                    to check HTML code.
+                </p>
+            </section>
 
-            <p>
-                These images show Coco and Eliot individually and together.
-            </p>
-        </section>
+        </main>
 
+        <footer>
+            <p>Created by Coco Aroch</p>
+        </footer>
 
-        <section id="links">
-            <h2>More Information</h2>
-
-            <p>
-                Learn more about creating websites at
-                <a href="https://www.w3schools.com/html/">W3Schools HTML</a>.
-            </p>
-
-            <p>
-                You can also check your HTML using the
-                <a href="https://validator.w3.org/">W3C Markup Validation Service</a>.
-            </p>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>Created by Coco Aroch for Front End Fundamentals.</p>
-    </footer>
-
-</body>
-
+    </body>
 </html>
