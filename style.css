@@ -1,38 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-body{
-    background-color: rgba(255,0,0,1.0);
-}
-
-h1,h2,h3{
-    font-family: "Roboto", fantasy;
-    font-weight: 200;
-}
-
-h1{
-    background-color: #ffffff;
-    text-align: center;
-}
-
-h2{
-    text-decoration: underline;
-    font-size: 30px;
-}
-
-h3{
-    color: plum;
-}
-
-li{
-    font-family: sans-serif;
-    font-size: 20px;
-    background-color: aliceblue;
-    
-}
-
-ul li{
-    background-color: aquamarine;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
 
 body {
     margin: 0;
@@ -52,12 +18,14 @@ h1 {
     font-size: 58px;
     margin: 0;
     color: #ffffff;
+    text-align: center;
 }
 
 h2 {
     font-size: 36px;
     color: #d63384;
     margin-top: 0;
+    text-decoration: underline;
 }
 
 h3 {
@@ -69,12 +37,18 @@ p {
     color: #5d3a55;
 }
 
+
+/* HEADER */
+
 header {
     background-color: #ff69b4;
     color: white;
     text-align: center;
     padding: 50px 20px 25px;
 }
+
+
+/* NAVIGATION */
 
 nav ul {
     display: grid;
@@ -84,6 +58,10 @@ nav ul {
     max-width: 700px;
     margin: 30px auto 0;
     gap: 15px;
+}
+
+nav li {
+    list-style: none;
 }
 
 nav a {
@@ -101,6 +79,9 @@ nav a:hover {
     color: #fff3a6;
 }
 
+
+/* MAIN CONTENT */
+
 main {
     max-width: 950px;
     margin: auto;
@@ -114,20 +95,18 @@ section {
     border-radius: 20px;
 }
 
+
+/* STORY */
+
 #story {
     background-color: #ffe0ef;
 }
 
+
+/* CHARACTERS */
+
 #characters {
     background-color: #fbe4ff;
-}
-
-#adventure {
-    background-color: #fff3c4;
-}
-
-#gallery {
-    background-color: #e6f4ff;
 }
 
 .character-grid {
@@ -150,6 +129,7 @@ section {
 .character-card img {
     width: 100%;
     max-width: 300px;
+    height: auto;
     border-radius: 18px;
 }
 
@@ -165,6 +145,30 @@ section {
     font-weight: bold;
 }
 
+
+/* ADVENTURE */
+
+#adventure {
+    background-color: #fff3c4;
+}
+
+#adventure ul li,
+#adventure ol li {
+    margin-bottom: 7px;
+    color: #5a3d74;
+}
+
+#adventure ol li {
+    list-style: lower-greek;
+}
+
+
+/* GALLERY */
+
+#gallery {
+    background-color: #e6f4ff;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -174,6 +178,7 @@ section {
 
 .gallery-grid img {
     width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -186,6 +191,9 @@ section {
 .gallery-text h3 {
     color: #d63384;
 }
+
+
+/* TEXT STYLING */
 
 strong {
     color: #e6398f;
@@ -201,10 +209,8 @@ mark {
     padding: 3px 6px;
 }
 
-main li {
-    margin-bottom: 7px;
-    color: #5a3d74;
-}
+
+/* LINKS */
 
 main a {
     color: #d63384;
@@ -220,6 +226,9 @@ main a:hover {
     background-color: #ffd6ea;
 }
 
+
+/* FOOTER */
+
 footer {
     background-color: #7b3fb2;
     color: white;
@@ -231,31 +240,62 @@ footer p {
     color: white;
 }
 
+
+/* MOBILE RESPONSIVE DESIGN */
+
 @media screen and (max-width: 600px) {
 
+    /* Navigation changes from horizontal to vertical */
     nav ul {
         grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav li {
+        width: 100%;
     }
 
     nav a {
         display: block;
+        width: auto;
         text-align: center;
     }
 
+    /* Character grid changes from two columns to one */
     .character-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    /* Gallery grid changes from two columns to one */
     .gallery-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
+    /* Makes images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Smaller typography for mobile */
     h1 {
         font-size: 38px;
     }
 
     h2 {
         font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    /* Smaller spacing for mobile */
+    header {
+        padding: 35px 15px 20px;
     }
 
     main {
@@ -269,8 +309,4 @@ footer p {
     .character-card {
         padding: 20px;
     }
-}
-
-ol li{
-    list-style: lower-greek;
 }
