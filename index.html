@@ -29,6 +29,16 @@
                     <li><a href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
+
+            <div class="controller">
+                <h2>Control the Page</h2>
+
+                <button id="title-button">Change the Title</button>
+
+                <button id="pink-button">Make It SUPER Pink</button>
+
+                <button id="party-button">Party Mode 🎉</button>
+            </div>
         </header>
 
         <main>
@@ -42,7 +52,7 @@
                     they are going to find it.
                 </p>
 
-                <p>
+                <p id="team-text">
                     They have completely different personalities, but
                     <strong>they make a great team.</strong>
                 </p>
@@ -79,7 +89,7 @@
 
                 </div>
 
-                <p class="friend-text">
+                <p class="friend-text" id="friend-text">
                     Coco and Eliot are <em>best friends.</em>
                 </p>
             </section>
@@ -126,7 +136,7 @@
                     <div class="gallery-text">
                         <h3>Partners in Crime</h3>
 
-                        <p>
+                        <p id="gallery-text">
                             Coco and Eliot are very different, but their differences
                             are what make their adventures fun.
                         </p>
@@ -151,16 +161,6 @@
                 </p>
             </section>
 
-            <section class="interactive-section">
-                <h2>Make It Interactive</h2>
-
-                <button id="title-button">Change the Title</button>
-
-                <button id="pink-button">Make It Pink</button>
-
-                <button id="party-button">Party Mode</button>
-            </section>
-
         </main>
 
         <footer>
@@ -176,36 +176,74 @@
 
             let mainTitle = document.getElementById("main-title");
             let storyText = document.getElementById("story-text");
+            let teamText = document.getElementById("team-text");
             let cocoCard = document.getElementById("coco-card");
             let eliotCard = document.getElementById("eliot-card");
+            let friendText = document.getElementById("friend-text");
+            let galleryText = document.getElementById("gallery-text");
             let footerText = document.getElementById("footer-text");
 
 
             titleButton.addEventListener("click", function() {
 
-                mainTitle.innerHTML = "Coco and Eliot: A Night Out 💕";
+                mainTitle.innerHTML = "✨ COCO + ELIOT TAKE THE NIGHT ✨";
 
-                mainTitle.style.fontSize = "65px";
+                mainTitle.style.fontSize = "75px";
+
+                mainTitle.style.letterSpacing = "5px";
+
+                mainTitle.style.textTransform = "uppercase";
 
             });
 
 
             pinkButton.addEventListener("click", function() {
 
-                document.body.style.backgroundColor = "#ffd6e8";
+                document.body.style.backgroundColor = "#ffb6d9";
 
-                storyText.style.color = "#d63384";
+                storyText.style.color = "#ff1493";
+
+                document.getElementById("story").style.backgroundColor = "#ffe4f2";
+
+                document.getElementById("characters").style.backgroundColor = "#ffc7e3";
+
+                document.getElementById("adventure").style.backgroundColor = "#ffe0ef";
+
+                document.getElementById("gallery").style.backgroundColor = "#ffc1dc";
+
+                footerText.style.color = "#ff1493";
 
             });
 
 
             partyButton.addEventListener("click", function() {
 
+                mainTitle.innerHTML = "🎉💖✨ COCO + ELIOT PARTY MODE ✨💖🎉";
+
+                storyText.innerHTML =
+                "💋✨ Coco and Eliot are BESTIES FOREVER 💕🎀 and tonight is officially CHAOS MODE 🎉🍸💖✨";
+
+                teamText.innerHTML =
+                "💞👯‍♀️✨ They are dramatic, iconic, unstoppable, and absolutely <strong>READY FOR THE NIGHT.</strong> 💋🎉🍾";
+
+                friendText.innerHTML =
+                "💖🎀✨ BEST FRIENDS FOREVER ✨🎀💖 👯‍♀️💋🍸🎉";
+
+                galleryText.innerHTML =
+                "🎉💞 Partners in crime, queens of the night, and professional chaos creators 💋✨🍾🎀";
+
+                footerText.innerHTML =
+                "✨💖🎉 COCO + ELIOT FOREVER 🎉💖✨";
+
+                document.body.classList.add("party-body");
+
                 cocoCard.classList.add("party-card");
 
                 eliotCard.classList.add("party-card");
 
-                footerText.innerHTML = "Coco + Eliot Forever ✨";
+                mainTitle.classList.add("party-title");
+
+                storyText.classList.add("emoji-text");
 
             });
 
