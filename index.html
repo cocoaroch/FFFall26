@@ -19,7 +19,7 @@
     <body>
 
         <header>
-            <h1>Coco and Eliot</h1>
+            <h1 id="main-title">Coco and Eliot</h1>
 
             <nav>
                 <ul>
@@ -36,7 +36,7 @@
             <section id="story">
                 <h2>The Story</h2>
 
-                <p>
+                <p id="story-text">
                     Coco and Eliot are best friends who are always together.
                     One day, something important goes missing and they decide
                     they are going to find it.
@@ -53,7 +53,7 @@
 
                 <div class="character-grid">
 
-                    <div class="character-card">
+                    <div class="character-card" id="coco-card">
                         <h3>Coco</h3>
 
                         <img src="images/78858d1e-fbee-4af7-be9e-d3a8edbc52f4.png" alt="Cartoon of Coco">
@@ -65,7 +65,7 @@
                         </p>
                     </div>
 
-                    <div class="character-card">
+                    <div class="character-card" id="eliot-card">
                         <h3>Eliot</h3>
 
                         <img src="images/6a0eaf70-2ab0-4a6f-a9fe-0bcb6ad5fbcb.png" alt="Cartoon of Eliot">
@@ -151,11 +151,65 @@
                 </p>
             </section>
 
+            <section class="interactive-section">
+                <h2>Make It Interactive</h2>
+
+                <button id="title-button">Change the Title</button>
+
+                <button id="pink-button">Make It Pink</button>
+
+                <button id="party-button">Party Mode</button>
+            </section>
+
         </main>
 
         <footer>
-            <p>A Story By Coco Aroch</p>
+            <p id="footer-text">A Story By Coco Aroch</p>
         </footer>
+
+
+        <script>
+
+            let titleButton = document.getElementById("title-button");
+            let pinkButton = document.getElementById("pink-button");
+            let partyButton = document.getElementById("party-button");
+
+            let mainTitle = document.getElementById("main-title");
+            let storyText = document.getElementById("story-text");
+            let cocoCard = document.getElementById("coco-card");
+            let eliotCard = document.getElementById("eliot-card");
+            let footerText = document.getElementById("footer-text");
+
+
+            titleButton.addEventListener("click", function() {
+
+                mainTitle.innerHTML = "Coco and Eliot: A Night Out 💕";
+
+                mainTitle.style.fontSize = "65px";
+
+            });
+
+
+            pinkButton.addEventListener("click", function() {
+
+                document.body.style.backgroundColor = "#ffd6e8";
+
+                storyText.style.color = "#d63384";
+
+            });
+
+
+            partyButton.addEventListener("click", function() {
+
+                cocoCard.classList.add("party-card");
+
+                eliotCard.classList.add("party-card");
+
+                footerText.innerHTML = "Coco + Eliot Forever ✨";
+
+            });
+
+        </script>
 
     </body>
 </html>
