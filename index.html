@@ -1,253 +1,177 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Coco and Eliot: A Night Out</title>
+<html lang="en">
 
-        <meta name="description" content="An information site about Coco and Eliot">
-        <meta name="author" content="Coco Aroch">
-        <meta name="keywords" content="Coco, Eliot, story, adventure">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A story about Coco and Eliot">
+    <meta name="author" content="Coco Aroch">
+    <meta name="keywords" content="Coco, Eliot, best friends, adventure">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <title>Coco and Eliot: A Night Out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+<body>
 
-    <body>
+    <header>
+        <h1 id="main-title">Coco and Eliot</h1>
+        <p class="subtitle">a little story about two best friends ♡</p>
 
-        <header>
-            <h1 id="main-title">Coco and Eliot</h1>
+        <nav>
+            <ul>
+                <li><a href="#story">the story</a></li>
+                <li><a href="#characters">the girls</a></li>
+                <li><a href="#adventure">the adventure</a></li>
+                <li><a href="#gallery">pictures</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <nav>
-                <ul>
-                    <li><a href="#story">Story</a></li>
-                    <li><a href="#characters">Characters</a></li>
-                    <li><a href="#adventure">Adventure</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                </ul>
-            </nav>
+    <main>
 
-            <div class="controller">
-                <h2>Control the Page</h2>
+        <div class="controller">
+            <h2>play around with the page!</h2>
+            <button id="title-button">Change the Title</button>
+            <button id="pink-button">Make It SUPER Pink</button>
+            <button id="party-button">Party Mode 🎉</button>
+        </div>
 
-                <button id="title-button">Change the Title</button>
+        <section id="story">
+            <h2>01. The Story</h2>
 
-                <button id="pink-button">Make It SUPER Pink</button>
+            <p id="story-text">
+                Coco and Eliot are best friends who are always together.
+                One day, something important goes missing and they decide
+                they are going to find it.
+            </p>
 
-                <button id="party-button">Party Mode 🎉</button>
+            <p id="team-text">
+                They have completely different personalities, but
+                <strong>they make a great team.</strong>
+            </p>
+        </section>
+
+        <section id="characters">
+            <h2>02. Meet Coco and Eliot</h2>
+
+            <div class="character-grid">
+
+                <div class="character-card" id="coco-card">
+                    <h3>COCO ♡</h3>
+
+                    <img src="images/78858d1e-fbee-4af7-be9e-d3a8edbc52f4.png" alt="Cartoon of Coco">
+
+                    <p>
+                        Coco has bleach blonde hair and huge glasses that
+                        take up almost half of her face. She is curious,
+                        dramatic, and always ready to do something fun.
+                    </p>
+                </div>
+
+                <div class="character-card" id="eliot-card">
+                    <h3>ELIOT ♡</h3>
+
+                    <img src="images/6a0eaf70-2ab0-4a6f-a9fe-0bcb6ad5fbcb.png" alt="Cartoon of Eliot">
+
+                    <p>
+                        Eliot has dirty blonde hair, thick eyebrows, long
+                        eyelashes, and a soft button nose. She is more
+                        careful than Coco and usually thinks before
+                        making a decision.
+                    </p>
+                </div>
+
             </div>
-        </header>
 
-        <main>
+            <p class="friend-text" id="friend-text">
+                coco + eliot = <em>best friends forever</em>
+            </p>
+        </section>
 
-            <section id="story">
-                <h2>The Story</h2>
+        <section id="adventure">
+            <h2>03. The Adventure</h2>
 
-                <p id="story-text">
-                    Coco and Eliot are best friends who are always together.
-                    One day, something important goes missing and they decide
-                    they are going to find it.
-                </p>
+            <p>
+                Coco and Eliot decide to retrace their steps and look
+                for clues that will help them find what went missing.
+            </p>
 
-                <p id="team-text">
-                    They have completely different personalities, but
-                    <strong>they make a great team.</strong>
-                </p>
-            </section>
+            <div class="adventure-grid">
 
-            <section id="characters">
-                <h2>The Characters</h2>
-
-                <div class="character-grid">
-
-                    <div class="character-card" id="coco-card">
-                        <h3>Coco</h3>
-
-                        <img src="images/78858d1e-fbee-4af7-be9e-d3a8edbc52f4.png" alt="Cartoon of Coco">
-
-                        <p>
-                            Coco has bleach blonde hair and huge glasses that take up
-                            almost half of her face. She is curious, dramatic, and
-                            always ready to do something fun.
-                        </p>
-                    </div>
-
-                    <div class="character-card" id="eliot-card">
-                        <h3>Eliot</h3>
-
-                        <img src="images/6a0eaf70-2ab0-4a6f-a9fe-0bcb6ad5fbcb.png" alt="Cartoon of Eliot">
-
-                        <p>
-                            Eliot has dirty blonde hair, thick eyebrows, long eyelashes,
-                            and a soft button nose. She is more careful than Coco and
-                            usually thinks before making a decision.
-                        </p>
-                    </div>
-
+                <div>
+                    <h3>what they're bringing...</h3>
+                    <ul>
+                        <li>Coco's glasses</li>
+                        <li>Eliot's notebook</li>
+                        <li>Their phones</li>
+                        <li>Snacks (obviously)</li>
+                    </ul>
                 </div>
 
-                <p class="friend-text" id="friend-text">
-                    Coco and Eliot are <em>best friends.</em>
-                </p>
-            </section>
-
-            <section id="adventure">
-                <h2>The Adventure</h2>
-
-                <p>
-                    Coco and Eliot decide to retrace their steps and look for
-                    clues that will help them find what went missing.
-                </p>
-
-                <h3>What They Bring</h3>
-
-                <ul>
-                    <li>Coco's glasses</li>
-                    <li>Eliot's notebook</li>
-                    <li>Their phones</li>
-                    <li>Snacks</li>
-                </ul>
-
-                <h3>The Plan</h3>
-
-                <ol>
-                    <li>Go back to where they started.</li>
-                    <li>Look for clues.</li>
-                    <li>Ask people for help.</li>
-                    <li>Follow the clues.</li>
-                    <li>Find the missing item.</li>
-                </ol>
-
-                <p>
-                    Their number one rule is to <mark>stick together.</mark>
-                </p>
-            </section>
-
-            <section id="gallery">
-                <h2>Gallery</h2>
-
-                <div class="gallery-grid">
-
-                    <img src="images/e3edf900-63e2-4e44-b927-f245aba2eed5.png" alt="Coco and Eliot together">
-
-                    <div class="gallery-text">
-                        <h3>Partners in Crime</h3>
-
-                        <p id="gallery-text">
-                            Coco and Eliot are very different, but their differences
-                            are what make their adventures fun.
-                        </p>
-                    </div>
-
+                <div>
+                    <h3>the plan:</h3>
+                    <ol>
+                        <li>Go back to where they started</li>
+                        <li>Look for clues</li>
+                        <li>Ask people for help</li>
+                        <li>Follow the clues</li>
+                        <li>Find the missing item!</li>
+                    </ol>
                 </div>
-            </section>
 
-            <section class="links-section">
-                <h2>Links</h2>
+            </div>
 
-                <p>
-                    Visit
-                    <a href="https://www.w3schools.com/html/">W3Schools</a>
-                    to learn more about HTML.
-                </p>
+            <p class="rule">
+                Their number one rule is to <mark>stick together.</mark>
+            </p>
+        </section>
 
-                <p>
-                    Visit the
-                    <a href="https://validator.w3.org/">W3C Validator</a>
-                    to check HTML code.
-                </p>
-            </section>
+        <section id="gallery">
+            <h2>04. Our Gallery ♡</h2>
 
-        </main>
+            <div class="gallery-grid">
 
-        <footer>
-            <p id="footer-text">A Story By Coco Aroch</p>
-        </footer>
+                <img src="images/e3edf900-63e2-4e44-b927-f245aba2eed5.png" alt="Coco and Eliot together">
 
+                <div class="gallery-text">
+                    <h3>partners in crime</h3>
 
-        <script>
+                    <p id="gallery-text">
+                        Coco and Eliot are very different, but their
+                        differences are what make their adventures fun.
+                    </p>
 
-            let titleButton = document.getElementById("title-button");
-            let pinkButton = document.getElementById("pink-button");
-            let partyButton = document.getElementById("party-button");
+                    <p>besties since forever &lt;3</p>
+                </div>
 
-            let mainTitle = document.getElementById("main-title");
-            let storyText = document.getElementById("story-text");
-            let teamText = document.getElementById("team-text");
-            let cocoCard = document.getElementById("coco-card");
-            let eliotCard = document.getElementById("eliot-card");
-            let friendText = document.getElementById("friend-text");
-            let galleryText = document.getElementById("gallery-text");
-            let footerText = document.getElementById("footer-text");
+            </div>
+        </section>
 
+        <section class="links-section">
+            <h2>05. Some Links</h2>
 
-            titleButton.addEventListener("click", function() {
+            <p>
+                Visit
+                <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools</a>
+                to learn more about HTML.
+            </p>
 
-                mainTitle.innerHTML = "✨ COCO + ELIOT TAKE THE NIGHT ✨";
+            <p>
+                Visit the
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Validator</a>
+                to check HTML code.
+            </p>
+        </section>
 
-                mainTitle.style.fontSize = "75px";
+    </main>
 
-                mainTitle.style.letterSpacing = "5px";
+    <footer>
+        <p id="footer-text">made with ♡ by coco aroch</p>
+    </footer>
 
-                mainTitle.style.textTransform = "uppercase";
+    <script src="script.js"></script>
 
-            });
-
-
-            pinkButton.addEventListener("click", function() {
-
-                document.body.style.backgroundColor = "#ffb6d9";
-
-                storyText.style.color = "#ff1493";
-
-                document.getElementById("story").style.backgroundColor = "#ffe4f2";
-
-                document.getElementById("characters").style.backgroundColor = "#ffc7e3";
-
-                document.getElementById("adventure").style.backgroundColor = "#ffe0ef";
-
-                document.getElementById("gallery").style.backgroundColor = "#ffc1dc";
-
-                footerText.style.color = "#ff1493";
-
-            });
-
-
-            partyButton.addEventListener("click", function() {
-
-                mainTitle.innerHTML = "🎉💖✨ COCO + ELIOT PARTY MODE ✨💖🎉";
-
-                storyText.innerHTML =
-                "💋✨ Coco and Eliot are BESTIES FOREVER 💕🎀 and tonight is officially CHAOS MODE 🎉🍸💖✨";
-
-                teamText.innerHTML =
-                "💞👯‍♀️✨ They are dramatic, iconic, unstoppable, and absolutely <strong>READY FOR THE NIGHT.</strong> 💋🎉🍾";
-
-                friendText.innerHTML =
-                "💖🎀✨ BEST FRIENDS FOREVER ✨🎀💖 👯‍♀️💋🍸🎉";
-
-                galleryText.innerHTML =
-                "🎉💞 Partners in crime, queens of the night, and professional chaos creators 💋✨🍾🎀";
-
-                footerText.innerHTML =
-                "✨💖🎉 COCO + ELIOT FOREVER 🎉💖✨";
-
-                document.body.classList.add("party-body");
-
-                cocoCard.classList.add("party-card");
-
-                eliotCard.classList.add("party-card");
-
-                mainTitle.classList.add("party-title");
-
-                storyText.classList.add("emoji-text");
-
-            });
-
-        </script>
-
-    </body>
+</body>
 </html>
